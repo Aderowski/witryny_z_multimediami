@@ -15,12 +15,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16x16.png">
+  <link rel="manifest" href="resources/icons/site.webmanifest">
   <title>Hello, world!</title>
   <style>
     * {
       font-family: 'Poppins', sans-serif;
       color: whitesmoke;
+      cursor:url("resources/cursor/kursor-unactive.png"),default;
     }
+
+    /*
+    SCROLLBAR
+    */
+    ::-webkit-scrollbar{
+      width: 20px;
+    }
+    ::-webkit-scrollbar-thumb{
+      border-radius: 30px;
+      background: linear-gradient(#b6a55f,#765921);
+      box-shadow: inset 2px 2px 2px rgba(255,255,255,0.05),inset -2px -2px -2px rgba(0,0,0,0.05);
+    }
+    ::-webkit-scrollbar-track{
+      background: linear-gradient(#022,#044);
+    }
+
 
     .menu,
     footer {
@@ -54,21 +76,13 @@
       left: 0;
       width: 125px;
       height: 125px;
-    }
-
-    .champ2 {
-      position: absolute;
-      top: 30px;
-      left: 30px;
-      width: 175px;
-      height: 175px;
+      cursor:url("resources/cursor/kursor-active.png"),default;
     }
   </style>
 </head>
-
 <body class="d-flex flex-column min-vh-100">
   <video autoplay muted loop id="tlo">
-    <source src="addons/tlo.mp4" type="video/mp4">
+    <source src="resources/tlo.mp4" type="video/mp4">
   </video>
   <!-- MENU -->
   <div class="menu">
@@ -88,7 +102,7 @@
           inventore repellendus!</div> <br>
         <div class="row rounded section">
           <p class="h4 my-3">BOHATEROWIE</p>
-          <div class="champ"><img class="champ1" src="addons/champs/jhin.jpg" alt=""><img class="champ2" src="addons/champs/ionianborder.png" alt="">
+          <div class="champ"><img class="champ1" src="resources/champs/ramkajhin.png" alt="jhin">
           </div>
         </div>
       </div>
@@ -99,8 +113,8 @@
   <!-- FOOTER -->
   <footer class="text-center text-lg-start mt-auto">
     <div class="text-center p-3">
-      © 2020 Copyright:
-      <a href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      © 2022 Autorzy:
+      <a href="https://github.com/aderowski" target="_blank">Adrian Jelonek</a>, <a href="https://github.com/docekk" target="_blank">Maciej Piechocki</a>
     </div>
   </footer>
   <!-- footer -->
