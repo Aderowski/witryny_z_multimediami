@@ -1,0 +1,84 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    cursor: url("resources/cursor/kursor-unactive.png"), default;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    color: whitesmoke;
+    cursor: url("resources/cursor/kursor-active.png"), default;
+}
+
+/*
+  SCROLLBAR
+  */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: linear-gradient(#b6a55f, #765921);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.05), inset -2px -2px -2px rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(#022, #044);
+}
+
+.menu,
+footer {
+    background-color: black;
+    height: 70px;
+}
+
+.menu {
+    position: fixed;
+    width: 100vw;
+}
+
+#tlo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card {
+    background-color: rgb(18, 21, 189);
+}
+
+.champ1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 128px;
+    height: 128px;
+    cursor: url("resources/cursor/kursor-active.png"), default;
+}
+
+.intro {
+    height: 100vh;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999999;
+}
