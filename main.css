@@ -93,10 +93,9 @@ a:hover {
     margin-top: 75px;
 }
 .btn-intro{
-    background-color: #013045;
-    opacity: 0.85;
+    background-color: rgba(0, 0, 0, 0.7);
     width: 50%;
-    border-color: #2FCDE6 !important;
+    border-color: #9B864F !important;
     border-width: 3px !important;
 }
 button{
@@ -104,4 +103,12 @@ button{
 }
 button:hover{
     cursor: url("resources/cursor/kursor-active.png"), default;
+}
+.img-text{
+    background-color:#061C25 ;
+    width: 250px;
+    height: 325px;
+}
+audio{
+    width: 250px;
 }
