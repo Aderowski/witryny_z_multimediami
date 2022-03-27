@@ -67,11 +67,16 @@ a:hover {
 }
 
 .champ1 {
+    filter: brightness(50%) saturate(35%);
     position: relative;
     top: 0;
     left: 0;
-    width: 128px;
-    height: 128px;
+    width: 150px;
+    height: 150px;
+    cursor: url("resources/cursor/kursor-active.png"), default;
+}
+.champ1:hover {
+    filter: brightness(125%);
     cursor: url("resources/cursor/kursor-active.png"), default;
 }
 
@@ -111,4 +116,18 @@ button:hover{
 }
 audio{
     width: 250px;
+}
+svg:hover{
+    cursor: url("resources/cursor/kursor-active.png"), default;
+    fill:#fff;
+}
+i {
+    cursor: url("resources/cursor/kursor-active.png"), default;
+}
+.champ_ahri{
+    background: url("resources/champs/art-ahri.jpg"), no-repeat;
+}
+
+.champ_ahri:hover{
+    background: url("resources/champs/art-aphelios.jpg"), no-repeat;
 }
