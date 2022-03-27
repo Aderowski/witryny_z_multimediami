@@ -32,14 +32,22 @@ a:hover {
 }
 
 .menu,
-footer {
-    background-color: black;
+.footer {
     height: 70px;
+    z-index: 3;
+}
+.stopka{
+    background-color: #07212C  !important;
+    border-color: #9B864F !important;
+    border-width: 3px !important;
 }
 
 .menu {
+    background-color: #013045;
     position: fixed;
     width: 100vw;
+    border-color: #9B864F !important;
+    border-width: 3px !important;
 }
 
 #tlo {
@@ -58,10 +66,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.card {
-    background-color: rgb(18, 21, 189);
-}
-
 .champ1 {
     position: relative;
     top: 0;
@@ -77,8 +81,27 @@ footer {
 
 #btn-back-to-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     right: 20px;
     display: none;
     z-index: 999999;
+    border-color: #9B864F !important;
+}
+
+#logo {
+    z-index: 1;
+    margin-top: 75px;
+}
+.btn-intro{
+    background-color: #013045;
+    opacity: 0.85;
+    width: 50%;
+    border-color: #2FCDE6 !important;
+    border-width: 3px !important;
+}
+button{
+    cursor: url("resources/cursor/kursor-active.png"), default;
+}
+button:hover{
+    cursor: url("resources/cursor/kursor-active.png"), default;
 }

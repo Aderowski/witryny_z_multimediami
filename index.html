@@ -15,13 +15,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-
   <link rel="apple-touch-icon" sizes="180x180" href="resources/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16x16.png">
   <link rel="manifest" href="resources/icons/site.webmanifest">
+
   <script src="https://kit.fontawesome.com/817c2c56be.js" crossorigin="anonymous"></script>
-  <title>League of Legends</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+  <title>League of Legends - Bohaterowie</title>
+  <!-- our css -->
   <link rel="stylesheet" href="main.css">
 </head>
 
@@ -30,23 +35,24 @@
   <video autoplay muted loop id="tlo">
     <source src="resources/tlo.mp4" type="video/mp4">
   </video>
-  <!-- KONIEC WIDEO -->
 
   <!-- MENU -->
-  <div class="menu">
-    <p class="container py-3"><span class="h3">MENU</span></p>
+  
+  <div class="menu border-bottom animate__animated animate__bounceInDown">
+    <p class="container py-3 px-5">
+      <span class="h3"><a href="#">STRONA GŁÓWNA</a></span> <span class="h3 mx-5"><a href="#champions">BOHATEROWIE</a></span><img src="resources/LigaLogo.png" height="125" width="125" alt="logo na stronie" id="logo" class="position-absolute top-0 start-50 translate-middle">
+    </p>
   </div>
 
   <!-- CONTENT -->
   <div class="container">
     <div class="row">
       <div class="col my-5">
-        <div class="row intro text-center">
-          <p class="h2 mt-5 d-flex align-items-center justify-content-center"><a href="#champions">Poznaj bohaterów.
-              <br>Kliknij aby przejść dalej!</a></p>
+        <div class="row intro d-flex align-items-center justify-content-center text-center">
+          <button class="btn-intro h3 border rounded-pill p-3" ><a href=""> Wprowadź mnie do świata League of Legends!</a></button>
         </div>
         <div class="row rounded section" id="champions">
-          <p class="h4 my-3">BOHATEROWIE</p>
+          <p class="h2 my-5 text-center">BOHATEROWIE LOL'a - kliknij na ramkę aby dowiedzieć się wiecej!</p>
 
           <!-- wiersz bohaterow -->
           <div class="row my-5 text-center">
@@ -97,7 +103,11 @@
             </div>
           </div>
           <!-- koniec wiersza -->
-
+        </div>
+        <div class="row rounded section my-5" id="champions">
+          <p class="h4 my-3">xxx</p>
+          <div class="col-4">sss</div>
+          <div class="col">sss</div>
         </div>
       </div>
     </div>
@@ -111,7 +121,7 @@
   </button>
 
   <!-- FOOTER -->
-  <footer class="text-center text-lg-start mt-auto">
+  <footer class="text-center text-lg-start mt-auto border-top stopka">
     <div class="text-center p-3">
       © 2022 Autorzy:
       <a href="https://github.com/aderowski" target="_blank">
