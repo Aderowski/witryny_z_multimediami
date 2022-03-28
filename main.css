@@ -131,3 +131,9 @@ i {
 .champ_ahri:hover{
     background: url("resources/champs/art-aphelios.jpg"), no-repeat;
 }
+.champions-cards:first-child{
+    display: flex;
+}
+.champions-cards{
+    display: none;
+}
