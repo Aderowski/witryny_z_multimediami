@@ -103,6 +103,10 @@ a:hover {
     border-color: #9B864F !important;
     border-width: 3px !important;
 }
+
+.btn-intro:hover{
+     animation: glow 1s ease-in-out infinite alternate;
+}
 button{
     cursor: url("resources/cursor/kursor-active.png"), default;
 }
@@ -129,11 +133,103 @@ i {
 }
 
 .champ_ahri:hover{
+    background: url("resources/champs/art_ahri_skin.png"), no-repeat;
+    animation: show 1s ease-in alternate;
+}
+.champ_aphelios{
     background: url("resources/champs/art-aphelios.jpg"), no-repeat;
+}
+
+.champ_aphelios:hover{
+    background: url("resources/champs/art_aphelios_skin.png"), no-repeat;
+    animation: show 1s ease-in alternate;
+}
+.champ_garen{
+    background: url("resources/champs/art-garen.jpg"), no-repeat;
+}
+
+.champ_garen:hover{
+    background: url("resources/champs/art_garen_skin.png"), no-repeat;
+    animation: show 1s ease-in alternate;
+}
+.champ_jhin{
+    background: url("resources/champs/art-jhin.jpg"), no-repeat;
+}
+
+.champ_jhin:hover{
+    background: url("resources/champs/art_jhin_skin.png"), no-repeat;
+    animation: show 1s ease-in alternate;
+}
+.champ_katarina{
+    background: url("resources/champs/art-katarina.jpg"), no-repeat;
+}
+
+.champ_katarina:hover{
+    background: url("resources/champs/art_katarina_skin.png"), no-repeat;
+    animation: show 1s ease-in alternate;
+}
+.champ_lux{
+    background: url("resources/champs/art-lux.jpg"), no-repeat;
+}
+
+.champ_lux:hover{
+    background: url("resources/champs/art_lux_skin.png"), no-repeat;
+    animation: show 1s ease-in alternate;
+}
+.champ_nasus{
+    background: url("resources/champs/art-nasus.jpg"), no-repeat;
+}
+
+.champ_nasus:hover{
+    background: url("resources/champs/art_nasus_skin.png"), no-repeat;
+    animation: show 1s ease-in alternate;
+}
+.champ_rammus{
+    background: url("resources/champs/art-rammus.jpg"), no-repeat;
+}
+
+.champ_rammus:hover{
+    background: url("resources/champs/art_rammus_skin.png"), no-repeat;
+    animation: show 1s ease-in alternate;
+}
+.champ_teemo{
+    background: url("resources/champs/art-teemo.jpg"), no-repeat;
+}
+
+.champ_teemo:hover{
+    background: url("resources/champs/art_teemo_skin.png"), no-repeat;
+    animation: show 1s ease-in alternate;
+}
+.champ_yasuo{
+    background: url("resources/champs/art-yasuo.jpg"), no-repeat;
+}
+
+.champ_yasuo:hover{
+    background: url("resources/champs/art_yasuo_skin.png"), no-repeat;
+    animation: show 1s ease-in alternate;
 }
 .champions-cards:first-child{
     display: flex;
 }
 .champions-cards{
     display: none;
+}
+.przycisk:hover{
+     animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #95a503, 0 0 40px #95a503, 0 0 50px #95a503, 0 0 60px #95a503, 0 0 70px #95a503;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #95a503, 0 0 40px #95a503, 0 0 50px #95a503, 0 0 60px #95a503, 0 0 70px #95a503, 0 0 80px #95a503;
+    }
+}
+@keyframes show {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
 }
